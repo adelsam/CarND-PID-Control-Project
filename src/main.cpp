@@ -35,7 +35,7 @@ int main()
   PID pid;
   // TODO: Initialize the pid variable.
   //void PID::Init(double Kp, double Ki, double Kd)
-  pid.Init(0.09, 6E-10, 0.0015);
+  pid.Init(0.12, 6E-7, 0.01);
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
