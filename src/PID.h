@@ -34,8 +34,9 @@ public:
 
   /*
   * Update the PID error variables given cross track error.
+   * Return steering angle
   */
-  void UpdateError(double cte);
+  double UpdateError(double cte);
 
   /*
   * Calculate the total PID error.
